@@ -243,7 +243,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>autocomplete_report.html</h1>
-    <p>Report generated on 14-Apr-2020 at 01:02:15 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 14-Apr-2020 at 10:37:18 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,7 +262,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.6.6</td></tr></table>
     <h2>Summary</h2>
-    <p>26 tests ran in 78.58 seconds. </p>
+    <p>26 tests ran in 67.50 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">20 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">6 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -282,52 +282,52 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponse object at 0x7fbe61f230b8&gt;, dataset = (&#x27;ruhstaller_beer&#x27;, [])<br/><br/>    def test_response_not_empty(self, dataset):<br/>        &quot;&quot;&quot;response data is not  empty&quot;&quot;&quot;<br/>    <br/>        word, response = dataset<br/>&gt;       assert response<br/><span class="error">E       assert []</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:31: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponse object at 0x7fe9d199f748&gt;, dataset = (&#x27;ruhstaller_beer&#x27;, [])<br/><br/>    def test_response_not_empty(self, dataset):<br/>        &quot;&quot;&quot;response data is not  empty&quot;&quot;&quot;<br/>    <br/>        word, response = dataset<br/>&gt;       assert response<br/><span class="error">E       assert []</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:31: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[running%20%20dogs%20%20brewery]</td>
-          <td class="col-duration">0.97</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fbe61eeedd8&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fbe625914e0&gt;, value = &#x27;running%20%20dogs%20%20brewery&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;5925...ogs Brewery&#x27;}] == []</span><br/><span class="error">E         Left contains one more item: {&#x27;id&#x27;: &#x27;5925&#x27;, &#x27;name&#x27;: &#x27;Running Dogs Brewery&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[running-dogs-brewery]</td>
           <td class="col-duration">0.69</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fbe61efc358&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fbe625914e0&gt;, value = &#x27;running-dogs-brewery&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;5925...ogs Brewery&#x27;}] == []</span><br/><span class="error">E         Left contains one more item: {&#x27;id&#x27;: &#x27;5925&#x27;, &#x27;name&#x27;: &#x27;Running Dogs Brewery&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fe9d12a8dd8&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fe9d19b6748&gt;, value = &#x27;running%20%20dogs%20%20brewery&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;5925...ogs Brewery&#x27;}] == []</span><br/><span class="error">E         Left contains one more item: {&#x27;id&#x27;: &#x27;5925&#x27;, &#x27;name&#x27;: &#x27;Running Dogs Brewery&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[running-dogs-brewery]</td>
+          <td class="col-duration">1.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fe9d12b7358&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fe9d19b6748&gt;, value = &#x27;running-dogs-brewery&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;5925...ogs Brewery&#x27;}] == []</span><br/><span class="error">E         Left contains one more item: {&#x27;id&#x27;: &#x27;5925&#x27;, &#x27;name&#x27;: &#x27;Running Dogs Brewery&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[%20brewery]</td>
-          <td class="col-duration">1.32</td>
+          <td class="col-duration">0.57</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fbe61efcc50&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fbe625914e0&gt;, value = &#x27;%20brewery&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;7416...rewery&#x27;}, ...] == []</span><br/><span class="error">E         Left contains 15 more items, first extra item: {&#x27;id&#x27;: &#x27;7416&#x27;, &#x27;name&#x27;: &#x27;Diamond Knot Brewery B2 Brewery &amp; Taproom&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fe9d12b7c50&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fe9d19b6748&gt;, value = &#x27;%20brewery&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;7416...rewery&#x27;}, ...] == []</span><br/><span class="error">E         Left contains 15 more items, first extra item: {&#x27;id&#x27;: &#x27;7416&#x27;, &#x27;name&#x27;: &#x27;Diamond Knot Brewery B2 Brewery &amp; Taproom&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[modern,times]</td>
-          <td class="col-duration">1.19</td>
+          <td class="col-duration">0.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fbe61f127f0&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fbe625914e0&gt;, value = &#x27;modern,times&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;822&#x27;...ermentorium&#x27;}] == []</span><br/><span class="error">E         Left contains 4 more items, first extra item: {&#x27;id&#x27;: &#x27;822&#x27;, &#x27;name&#x27;: &#x27;Modern Times Beer&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fe9d12cb7f0&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fe9d19b6748&gt;, value = &#x27;modern,times&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;822&#x27;...ermentorium&#x27;}] == []</span><br/><span class="error">E         Left contains 4 more items, first extra item: {&#x27;id&#x27;: &#x27;822&#x27;, &#x27;name&#x27;: &#x27;Modern Times Beer&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[%20running%20dogs%20brewery]</td>
-          <td class="col-duration">1.15</td>
+          <td class="col-duration">1.06</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fbe61f1bac8&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fbe625914e0&gt;, value = &#x27;%20running%20dogs%20brewery&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;5925...ogs Brewery&#x27;}] == []</span><br/><span class="error">E         Left contains one more item: {&#x27;id&#x27;: &#x27;5925&#x27;, &#x27;name&#x27;: &#x27;Running Dogs Brewery&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;test_api_autocomplete.TestAutocompleteResponseBadValue object at 0x7fe9d12d5240&gt;<br/>api_client = &lt;openbrewerydb_api_tests.tools.client.APIClient object at 0x7fe9d19b6748&gt;, value = &#x27;%20running%20dogs%20brewery&#x27;<br/><br/>    @pytest.mark.parametrize(<br/>        &#x27;value&#x27;,<br/>        (&#x27;53cf66ac&#x27;, &#x27;{}&#x27;, &#x27;running__dogs__brewery&#x27;, &#x27;running%20%20dogs%20%20brewery&#x27;,<br/>         &#x27;running.dogs.brewery&#x27;, &#x27;running-dogs-brewery&#x27;, &#x27;runningdogsbrewery&#x27;,<br/>         &#x27;%20brewery&#x27;, &#x27;modern,times&#x27;, &#x27;%20&#x27;, &#x27;%20running%20dogs%20brewery&#x27;, &#x27;&#x27;))<br/>    def test_autocomplete_response_bad_value(self, api_client, value):<br/>        &quot;&quot;&quot;a autocomplete request returns an empty list if a bad value is passed&quot;&quot;&quot;<br/>    <br/>        endpoint = CONF.ENDPOINT_TEMPLATES[&#x27;autocomplete&#x27;].format(value)<br/>        response = api_client.get(endpoint)<br/>&gt;       assert response.json() == []<br/><span class="error">E       AssertionError: assert [{&#x27;id&#x27;: &#x27;5925...ogs Brewery&#x27;}] == []</span><br/><span class="error">E         Left contains one more item: {&#x27;id&#x27;: &#x27;5925&#x27;, &#x27;name&#x27;: &#x27;Running Dogs Brewery&#x27;}</span><br/><span class="error">E         Use -v to get the full diff</span><br/><br/>openbrewerydb_api_tests/tests/test_api_autocomplete.py:59: AssertionError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -341,7 +341,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponse::test_response_autocomplete_match[brewery]</td>
-          <td class="col-duration">12.49</td>
+          <td class="col-duration">14.09</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -359,7 +359,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponse::test_response_autocomplete_match[fox]</td>
-          <td class="col-duration">14.82</td>
+          <td class="col-duration">11.52</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -377,7 +377,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponse::test_response_autocomplete_match[ruhstaller%20beer]</td>
-          <td class="col-duration">1.77</td>
+          <td class="col-duration">2.11</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -404,7 +404,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponse::test_response_autocomplete_match[san]</td>
-          <td class="col-duration">12.92</td>
+          <td class="col-duration">9.73</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -422,7 +422,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponse::test_response_autocomplete_match[san%20brewery]</td>
-          <td class="col-duration">8.40</td>
+          <td class="col-duration">6.88</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -440,7 +440,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponse::test_response_autocomplete_match[wolf]</td>
-          <td class="col-duration">10.38</td>
+          <td class="col-duration">8.56</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -449,7 +449,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[53cf66ac]</td>
-          <td class="col-duration">0.67</td>
+          <td class="col-duration">0.61</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -458,7 +458,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[{}]</td>
-          <td class="col-duration">1.25</td>
+          <td class="col-duration">0.60</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -467,7 +467,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[running__dogs__brewery]</td>
-          <td class="col-duration">0.66</td>
+          <td class="col-duration">0.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -476,7 +476,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[running.dogs.brewery]</td>
-          <td class="col-duration">0.63</td>
+          <td class="col-duration">1.03</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -485,7 +485,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[runningdogsbrewery]</td>
-          <td class="col-duration">0.73</td>
+          <td class="col-duration">1.32</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -494,7 +494,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[%20]</td>
-          <td class="col-duration">1.29</td>
+          <td class="col-duration">0.65</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -503,7 +503,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">openbrewerydb_api_tests/tests/test_api_autocomplete.py::TestAutocompleteResponseBadValue::test_autocomplete_response_bad_value[]</td>
-          <td class="col-duration">0.63</td>
+          <td class="col-duration">0.58</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
